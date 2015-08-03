@@ -8,6 +8,10 @@ body {
     background-color: #f8f8f8;
 }
 
+.idColumn{
+    width:50px;
+}
+
 #wrapper {
     width: 100%;
 }
