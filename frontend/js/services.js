@@ -1,6 +1,6 @@
-angular.module('netServices', ['ngResource']).
+angular.module('cmsServices', ['ngResource']).
     factory('Poll', function($resource) {
         return $resource('polls/:pollId', {}, {
             query: { method: 'GET', params: { pollId: 'polls' }, isArray: true }
         })
-    })
+    });

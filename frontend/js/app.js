@@ -2,7 +2,7 @@
 
 /* App Module */
 
-angular.module('MultiLangCms', ['CmsServices']).
+angular.module('MultiLangCms', ['ngRoute']).
   config(['$routeProvider', function($routeProvider) {
 	  
 	 $routeProvider.
