@@ -12,8 +12,38 @@ body {
     width:50px;
 }
 
+nav h5{
+    margin-left:10px;
+}
+
 #wrapper {
     width: 100%;
+}
+
+.btn-label {position: relative;left: -12px;display: inline-block;padding: 6px 12px;background: rgba(0,0,0,0.15);border-radius: 3px 0 0 3px;}
+.btn-labeled {padding-top: 0;padding-bottom: 0;}
+.btn { margin-bottom:10px; }
+
+.form-group input[type="checkbox"] {
+    display: none;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span {
+    width: 20px;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+    display: none;
+}
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+    display: inline-block;
+}
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+    display: inline-block;
+}
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+    display: none;
 }
 
 #page-wrapper {

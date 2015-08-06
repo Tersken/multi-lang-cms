@@ -1,1 +1,55 @@
-<h1>PAGE WITH ID: {{id}}</h1>
+<div class="row">&nbsp;</div>
+<div class="container">
+
+    <div class="row">
+        <form role="form" id="contact-form" class="contact-form">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control" ng-model="page.title" name="title" placeholder="Title">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="[ form-group ]">
+                        <input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-default" autocomplete="off" />
+                        <div class="[ btn-group ]">
+                            <label for="fancy-checkbox-default" class="[ btn btn-default ]">
+                                <span class="[ glyphicon glyphicon-ok ]"></span>
+                                <span></span>
+                            </label>
+                            <label for="fancy-checkbox-default" class="[ btn btn-default active ]">
+                                Published
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <textarea class="form-control textarea" id="content"></textarea>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-labeled btn-success">
+                <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Save
+            </button>
+            <button type="button" class="btn btn-labeled btn-danger" ng-show="!newMode">
+                <span class="btn-label"><i class="glyphicon glyphicon-trash"></i></span>Delete
+            </button>
+
+        </div>
+    </div>
+</div>

@@ -13,20 +13,18 @@
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular/angular-route.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/controllers/baseController.js"></script> 
-    
+    <script src="js/controllers/baseController.js"></script>
+    <script src="js/controllers/cms/CmsDetail.js"></script>
+    <script src="js/controllers/cms/CmsList.js"></script>
+    <script src="js/controllers/users/UserDetail.js"></script>
+    <script src="js/controllers/users/UserList.js"></script>
+
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="lib/dataTables/css/jquery.dataTables.css">
     <link href="lib/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
     <link href="css/simplecms.css" rel="stylesheet">
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -69,28 +67,29 @@
 
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
+                    <ul class="nav nav-pills nav-stacked" id="side-menu">
                         <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> CMS<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Add page</a>
-                                </li>
-                                <li>
-                                    <a href="#/cms">Page list</a>
-                                </li>
-                            </ul>
+                            <h5><i class="fa fa-sitemap fa-fw"></i>
+                                <small><b>CMS</b></small>
+                            </h5>
+                        <li>
+                            <a href="#/cms/new">Add page</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-user fa-fw"></i> Users<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
+                            <a href="#/cms">Page list</a>
+                        </li>
+                        <li>
+                            <h5><i class="glyphicon glyphicon-user"></i>
+                                <small><b>USERS</b></small>
+                            </h5>
+
                                 <li>
-                                    <a href="#">Add user</a>
+                                    <a href="#/users/new">Add user</a>
                                 </li>
                                 <li>
-                                    <a href="#">User list</a>
+                                    <a href="#/users">User list</a>
                                 </li>
-                            </ul>
+
                         </li>
                     </ul>
                 </div>
@@ -110,6 +109,7 @@
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="lib/dataTables/js/jquery.js"></script>
     <script src="lib/dataTables/js/jquery.dataTables.js"></script>
+    <script src="lib/ckeditor/ckeditor.js"></script>
     <script src="lib/metisMenu/dist/metisMenu.min.js"></script>
     <script src="js/simplecms.js"></script>
 
