@@ -1,11 +1,13 @@
-function CmsDetailCtrl($scope, $location, $filter, $timeout, $http, $routeParams) {
+function CmsDetailCtrl($scope, $routeParams, $rootScope) {
     $scope.init = function() {
+        $rootScope.checkLogin();
         $scope.id = $routeParams.id;
         if(!$scope.id) $scope.newMode = true;
-       // config.extraPlugins = 'maximize';
+        /*var editor = CKEDITOR.instances['content'];
+        if (editor) { editor.destroy(true); }
         CKEDITOR.replace( 'content' , {
             extraPlugins : 'maximize'
-        });
+        });*/
     };
 
     $scope.init();

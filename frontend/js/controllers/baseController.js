@@ -1,10 +1,14 @@
 'use strict';
 
-function BaseCtrl($scope, $location, $filter, $timeout, $http) {
+function BaseCtrl($scope, $auth, $rootScope) {
 
 	$scope.init = function() {
-        console.log('tetten');
+        $rootScope.checkLogin();
 	};
+
+
+
+
 
 	$scope.init();
 }
