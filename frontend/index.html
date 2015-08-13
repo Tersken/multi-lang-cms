@@ -27,84 +27,125 @@
     <link rel="stylesheet" type="text/css" href="lib/dataTables/css/jquery.dataTables.css">
     <link href="lib/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
     <link href="css/simplecms.css" rel="stylesheet">
+    <link href="css/template.css" rel="stylesheet">
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
 </head>
 
 <body>
-    <div ng-show="!isAuthenticated" id="login-wrapper" class="loginBackground" ng-view>
+    <div ng-show="isAuthenticated" id="login-wrapper" class="loginBackground" ng-view>
     </div>
-    <div id="wrapper" ng-show="isAuthenticated">
+    <div id="wrapper" ng-show="!isAuthenticated">
+            <div class="storex-box">
+                <aside class="sm-side">
+                    <div class="user-head">
+                        <a class="main-avatar" href="javascript:;">
+                            <img height="60" src="img/loginLogo.png">
+                        </a>
+                        <div class="user-name">
+                            <h5>Wilfried</h5>
+                            <span>info@storex.nl</span>
+                        </div>
+                        <a class="storex-dropdown pull-right" href="javascript:;">
+                            <i class="fa fa-chevron-down"></i>
+                        </a>
+                    </div>
+                    <ul class="main-nav main-divider">
+                        <li class="active">
+                            <a href="#"><i class="fa fa-globe"></i> CMS</a>
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#/">SimpleCMS</a>
-            </div>
-            <!-- /.navbar-header -->
-
-            <ul class="nav navbar-top-links navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li>
+                            <a href="#"><i class="fa fa-users"></i> Users</a>
                         </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li>
+                            <a href="#"><i class="fa fa-files-o"></i> Files</a>
                         </li>
                     </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
-            </ul>
-            <!-- /.navbar-top-links -->
-
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav nav-pills nav-stacked" id="side-menu">
-                        <li>
-                            <h5><i class="fa fa-sitemap fa-fw"></i>
-                                <small><b>CMS</b></small>
-                            </h5>
-                        <li>
-                            <a href="#/cms/new">Add page</a>
-                        </li>
-                        <li>
-                            <a href="#/cms">Page list</a>
-                        </li>
-                        <li>
-                            <h5><i class="glyphicon glyphicon-user"></i>
-                                <small><b>USERS</b></small>
-                            </h5>
-
-                                <li>
-                                    <a href="#/users/new">Add user</a>
-                                </li>
-                                <li>
-                                    <a href="#/users">User list</a>
-                                </li>
-
-                        </li>
+                    <ul class="nav nav-pills nav-stacked labels-info main-divider">
+                        <li> <h4>Quick links</h4> </li>
+                        <li> <a href="#"> <i class=" fa fa-sign-blank text-danger"></i> Add a page </a> </li>
+                        <li> <a href="#"> <i class=" fa fa-sign-blank text-success"></i> Add a user </a> </li>
+                        <li> <a href="#"> <i class=" fa fa-sign-blank text-info "></i> Add a file </a>
+                    </li>
                     </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
-            </div>
-            <!-- /.navbar-static-side -->
-        </nav>
 
-        <div id="page-wrapper" ng-view>
-        </div>
+
+
+
+                </aside>
+                <aside class="lg-side">
+                    <div class="main-head">
+                        <h3>main</h3>
+                        <form action="#" class="pull-right position">
+                            <div class="input-append">
+                                <input type="text" class="sr-input" placeholder="Search storex">
+                                <button class="btn sr-btn" type="button"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main-body">
+                        <div class="storex-option">
+                            <div class="chk-all">
+                                <input type="checkbox" class="storex-checkbox storex-group-checkbox">
+                                <div class="btn-group">
+                                    <a data-toggle="dropdown" href="#" class="btn mini all" aria-expanded="false">
+                                        All
+                                        <i class="fa fa-angle-down "></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"> None</a></li>
+                                        <li><a href="#"> Read</a></li>
+                                        <li><a href="#"> Unread</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="btn-group">
+                                <a data-original-title="Refresh" data-placement="top" data-toggle="dropdown" href="#" class="btn mini tooltips">
+                                    <i class=" fa fa-refresh"></i>
+                                </a>
+                            </div>
+                            <div class="btn-group hidden-phone">
+                                <a data-toggle="dropdown" href="#" class="btn mini blue" aria-expanded="false">
+                                    More
+                                    <i class="fa fa-angle-down "></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Mark as Read</a></li>
+                                    <li><a href="#"><i class="fa fa-ban"></i> Spam</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <a data-toggle="dropdown" href="#" class="btn mini blue">
+                                    Move to
+                                    <i class="fa fa-angle-down "></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Mark as Read</a></li>
+                                    <li><a href="#"><i class="fa fa-ban"></i> Spam</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                </ul>
+                            </div>
+
+                            <ul class="unstyled main-pagination">
+                                <li><span>1-50 of 234</span></li>
+                                <li>
+                                    <a class="np-btn" href="#"><i class="fa fa-angle-left  pagination-left"></i></a>
+                                </li>
+                                <li>
+                                    <a class="np-btn" href="#"><i class="fa fa-angle-right pagination-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </aside>
+            </div>
 
         <!-- /#page-wrapper -->
 
