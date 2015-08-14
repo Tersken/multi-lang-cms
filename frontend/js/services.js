@@ -71,7 +71,7 @@ angular.module('CmsServices', ['ngCookies'], function ($provide) {
             var remark = method;
 
             $http({
-                'url': '/jservice.php?remark=' + remark,
+                'url': '/backend/index.php?remark=' + remark,
                 'method': 'POST',
                 'data': bodyRequest,
                 'headers': headers

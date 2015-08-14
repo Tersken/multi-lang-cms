@@ -9,8 +9,14 @@ function LoginCtrl($scope, $location, $filter, $timeout, $http, $auth, $rootScop
     $scope.init();
 
     $scope.login = function(){
-        $rootScope.isAuthenticated = true;
-        window.location = '#/';
+        $auth.login($scope.username, $scope.password, function(details){
+            alert('callbackok');
+        },
+        function(error){
+            alert('errorcallback');
+        });
+        //$rootScope.isAuthenticated = true;
+        //window.location = '#/';
     }
 }
 

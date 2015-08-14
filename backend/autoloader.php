@@ -1,14 +1,22 @@
 <?php
-class Autoloader {
-    static public function loader($className) {
-        $filename = "src/" . str_replace('\\', '/', $className) . ".php";
-        if (file_exists($filename)) {
-            include($filename);
-            if (class_exists($className)) {
-                return true;
-            }
-        }
-        return false;
+
+function loadClass($className) {
+    $fileName = '';
+    $namespace = '';
+    // Sets the include path as the "src" directory
+    $includePath = dirname(__FILE__).DIRECTORY_SEPARATOR.'src';
+
+    if (false !== ($lastNsPos = strripos($className, '\\'))) {
+        $namespace = substr($className, 0, $lastNsPos);
+        $className = substr($className, $lastNsPos + 1);
+        $fileName = str_replace('\\', DIRECTORY_SEPARATOR, $namespace) . DIRECTORY_SEPARATOR;
+    }
+    $fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
+    $fullFileName = $includePath . DIRECTORY_SEPARATOR . $fileName;
+    if (file_exists($fullFileName)) {
+        require $fullFileName;
+    } else {
+        throw new \Exception('Class "'.$fullFileName.'" does not exist.');
     }
 }
-spl_autoload_register('Autoloader::loader');
+spl_autoload_register('loadClass'); // Registers the autoloader
