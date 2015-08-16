@@ -2,14 +2,568 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdf13407-2ece-4fda-96a4-c589adb68873" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/src/AbstractModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/src/Connection/Database.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/src/Cms/PageModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/css/template.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/index.html" afterPath="$PROJECT_DIR$/frontend/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/css/simplecms.css" afterPath="$PROJECT_DIR$/frontend/css/simplecms.css" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\css\simplecms.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\css\template.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\img\loginBackground.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\img\loginLogo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\img\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\js\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\js\controllers\Login.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\js\controllers\baseController.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\js\controllers\cms\CmsDetail.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\js\controllers\cms\CmsList.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\js\controllers\users\UserDetail.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\js\controllers\users\UserList.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\js\directives.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\js\services.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\js\simplecms.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\angular\angular-cookies.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\angular\angular-route.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\angular\angular-route.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\angular\angular.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\angular\angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\bootstrap\css\bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\bootstrap\css\bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\bootstrap\css\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\bootstrap\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\bootstrap\css\bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\bootstrap\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\bootstrap\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\bootstrap\js\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\bootstrap\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\bootstrap\js\npm.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\CHANGES.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\adapters\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\build-config.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\ckeditor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\config.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\contents.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\af.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\ar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\bg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\bn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\bs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\cs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\cy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\da.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\de.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\el.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\en-au.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\eo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\es.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\et.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\eu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\fa.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\fi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\fo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\fr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\gl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\gu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\he.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\hi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\hr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\hu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\id.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\is.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\it.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\ja.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\ka.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\km.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\ko.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\ku.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\lt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\lv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\mk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\mn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\ms.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\nb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\nl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\no.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\pl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\pt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\ro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\si.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\sk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\sl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\sq.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\sr-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\sr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\sv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\th.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\tr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\tt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\ug.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\vi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\lang\zh.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\af.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\cs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\cy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\fo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\ko.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\mk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\mn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\nb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\nl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\no.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\pl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\tt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\a11yhelp\dialogs\lang\zh.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\about\dialogs\about.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\about\dialogs\hidpi\logo_ckeditor.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\about\dialogs\logo_ckeditor.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\clipboard\dialogs\paste.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\colordialog\dialogs\colordialog.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\dialog\dialogDefinition.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\div\dialogs\div.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\find\dialogs\find.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\flash\dialogs\flash.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\flash\images\placeholder.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\forms\dialogs\button.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\forms\dialogs\checkbox.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\forms\dialogs\form.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\forms\dialogs\hiddenfield.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\forms\dialogs\radio.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\forms\dialogs\select.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\forms\dialogs\textarea.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\forms\dialogs\textfield.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\forms\images\hiddenfield.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\icons_hidpi.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\iframe\dialogs\iframe.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\iframe\images\placeholder.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\image\dialogs\image.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\image\images\noimage.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\link\dialogs\anchor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\link\dialogs\link.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\link\images\anchor.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\link\images\hidpi\anchor.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\liststyle\dialogs\liststyle.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\magicline\images\hidpi\icon-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\magicline\images\hidpi\icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\magicline\images\icon-rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\magicline\images\icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\icons\hidpi\maximize.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\icons\maximize.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\af.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\ar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\bg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\bn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\bs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\cs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\cy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\da.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\de.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\el.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\en-au.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\eo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\es.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\et.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\eu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\fa.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\fi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\fo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\fr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\gl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\gu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\he.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\hi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\hr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\hu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\id.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\is.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\it.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\ja.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\ka.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\km.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\ko.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\ku.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\lt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\lv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\mk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\mn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\ms.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\nb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\nl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\no.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\pl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\pt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\ro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\si.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\sk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\sl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\sq.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\sr-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\sr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\sv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\th.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\tr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\tt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\ug.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\vi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\lang\zh.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\maximize\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\pagebreak\images\pagebreak.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\pastefromword\filter\default.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\preview\preview.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\scayt\LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\scayt\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\scayt\dialogs\options.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\scayt\dialogs\toolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\showblocks\images\block_address.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\showblocks\images\block_blockquote.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\showblocks\images\block_div.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\showblocks\images\block_h1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\showblocks\images\block_h2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\showblocks\images\block_h3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\showblocks\images\block_h4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\showblocks\images\block_h5.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\showblocks\images\block_h6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\showblocks\images\block_p.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\showblocks\images\block_pre.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\dialogs\smiley.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\angel_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\angel_smile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\angry_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\angry_smile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\broken_heart.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\broken_heart.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\confused_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\confused_smile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\cry_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\cry_smile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\devil_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\devil_smile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\embaressed_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\embarrassed_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\embarrassed_smile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\envelope.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\envelope.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\heart.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\heart.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\kiss.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\kiss.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\lightbulb.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\lightbulb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\omg_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\omg_smile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\regular_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\regular_smile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\sad_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\sad_smile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\shades_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\shades_smile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\teeth_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\teeth_smile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\thumbs_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\thumbs_down.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\thumbs_up.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\thumbs_up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\tongue_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\tongue_smile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\tounge_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\wink_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\smiley\images\wink_smile.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\af.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\ar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\bg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\cs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\cy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\da.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\de.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\el.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\eo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\es.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\et.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\fa.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\fi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\fr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\gl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\he.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\hr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\hu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\id.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\it.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\ja.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\km.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\ko.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\ku.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\lt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\lv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\nb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\nl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\no.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\pl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\pt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\si.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\sk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\sl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\sq.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\sv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\th.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\tr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\tt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\ug.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\vi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\lang\zh.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\specialchar\dialogs\specialchar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\table\dialogs\table.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\tabletools\dialogs\tableCell.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\templates\dialogs\templates.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\templates\dialogs\templates.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\templates\templates\default.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\templates\templates\images\template1.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\templates\templates\images\template2.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\templates\templates\images\template3.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\wsc\LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\wsc\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\wsc\dialogs\ciframe.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\wsc\dialogs\wsc.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\wsc\dialogs\wsc.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\plugins\wsc\dialogs\wsc_ie.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\css\samples.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\img\github-top.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\img\header-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\img\header-separator.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\img\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\img\navigation-tip.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\js\sample.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\js\sf.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\ajax.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\api.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\appendto.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\assets\inlineall\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\assets\outputxhtml\outputxhtml.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\assets\posteddata.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\assets\sample.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\assets\uilanguages\languages.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\datafiltering.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\dialog\assets\my_dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\dialog\dialog.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\divreplace.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\enterkey\enterkey.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.fla" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\htmlwriter\assets\outputforflash\swfobject.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\htmlwriter\outputforflash.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\htmlwriter\outputhtml.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\inlineall.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\inlinebycode.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\inlinetextarea.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\jquery.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\magicline\magicline.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\readonly.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\replacebyclass.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\replacebycode.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\sample.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\sample.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\sample_posteddata.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\tabindex.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\toolbar\toolbar.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\uicolor.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\uilanguages.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\wysiwygarea\fullpage.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\old\xhtmlstyle.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\css\fontello.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\font\LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\font\config.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\font\fontello.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\font\fontello.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\font\fontello.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\font\fontello.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\js\abstracttoolbarmodifier.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\js\fulltoolbareditor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\js\toolbarmodifier.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\js\toolbartextmodifier.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\lib\codemirror\javascript.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\lib\codemirror\neo.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\dialog_ie.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\dialog_ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\dialog_ie8.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\dialog_iequirks.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\editor.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\editor_gecko.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\editor_ie.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\editor_ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\editor_ie8.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\editor_iequirks.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\icons_hidpi.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\images\arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\images\close.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\images\hidpi\close.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\images\hidpi\lock-open.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\images\hidpi\lock.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\images\hidpi\refresh.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\images\lock-open.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\images\lock.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\images\refresh.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\images\spinner.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\skins\moono\readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\ckeditor\styles.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\dataTables\css\jquery.dataTables.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\dataTables\css\jquery.dataTables.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\dataTables\css\jquery.dataTables_themeroller.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\dataTables\images\Sorting icons.psd" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\dataTables\images\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\dataTables\images\sort_asc.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\dataTables\images\sort_asc_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\dataTables\images\sort_both.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\dataTables\images\sort_desc.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\dataTables\images\sort_desc_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\dataTables\js\jquery.dataTables.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\dataTables\js\jquery.dataTables.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\dataTables\js\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\css\font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\less\bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\less\core.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\less\extras.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\less\fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\less\font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\less\icons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\less\larger.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\less\list.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\less\mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\less\path.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\less\rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\less\spinning.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\less\stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\less\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\scss\_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\scss\_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\scss\_extras.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\scss\_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\scss\_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\scss\_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\scss\_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\scss\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\scss\_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\scss\_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\scss\_spinning.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\scss\_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\scss\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\font-awesome\scss\font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\jquery\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\metisMenu\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\metisMenu\Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\metisMenu\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\metisMenu\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\metisMenu\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\metisMenu\dist\metisMenu.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\metisMenu\dist\metisMenu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\metisMenu\dist\metisMenu.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\metisMenu\dist\metisMenu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\metisMenu\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\metisMenu\src\metisMenu.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\lib\metisMenu\src\metisMenu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\login.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\partials\cms\detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\partials\cms\list.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\partials\home.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\partials\users\detail.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\multi-lang-cms\frontend\partials\users\list.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="multi-lang-cms.iws" />
@@ -32,40 +586,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.7619047">
-              <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simplecms.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/css/simplecms.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.5172415">
-              <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/css/template.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.344828">
-              <caret line="56" column="47" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846">
+            <state vertical-scroll-proportion="0.0">
               <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
               <folding />
             </state>
@@ -75,63 +599,28 @@
       <file leaf-file-name="autoloader.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/autoloader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="configurator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/Server/configurator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/Cms/PageModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/AbstractModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <marker date="1439496644296" expanded="true" signature="129:143" placeholder="SELECT * FRO..." />
-                <marker date="1439496644296" expanded="true" signature="129:161" placeholder="SELECT * FRO..." />
-                <marker date="1439496644296" expanded="true" signature="129:179" placeholder="SELECT * FRO..." />
-                <marker date="1439496644296" expanded="true" signature="129:187" placeholder="SELECT * FRO..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/Connection/Database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0">
-              <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33296338">
+              <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -188,6 +677,7 @@
         <option value="$PROJECT_DIR$/backend/src/Files/Db.php" />
         <option value="$PROJECT_DIR$/backend/src/Connection/Database.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/js/services.js" />
       </list>
     </option>
   </component>
@@ -231,7 +721,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -261,7 +750,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,28 +765,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi-lang-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi-lang-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -316,59 +783,12 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi-lang-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi-lang-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Connection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi-lang-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="multi-lang-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -437,7 +857,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -448,6 +867,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -468,208 +888,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/controllers/baseController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/controllers/cms/CmsDetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/css/simplecms.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="74" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/controllers/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/partials/cms/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="116" column="113" selection-start-line="116" selection-start-column="113" selection-end-line="116" selection-end-column="113" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/controllers/cms/CmsDetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/css/simplecms.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/controllers/cms/CmsList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/partials/cms/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/partials/cms/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="43" selection-start-line="96" selection-start-column="43" selection-end-line="96" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/controllers/baseController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/css/simplecms.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/partials/cms/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/partials/cms/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/lib/ckeditor/samples/js/sample.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2326389">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/lib/ckeditor/samples/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0202864">
-          <caret line="123" column="10" selection-start-line="123" selection-start-column="10" selection-end-line="123" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/partials/cms/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/partials/cms/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../bb/pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13163717">
@@ -684,143 +902,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/partials/users/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/partials/users/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/controllers/users/UserDetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/controllers/users/UserList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/controllers/cms/CmsDetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/controllers/cms/CmsList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/controllers/baseController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/js/controllers/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../bb/pages/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26659292">
           <caret line="49" column="45" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/css/simplecms.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.5172415">
-          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.344828">
-          <caret line="56" column="47" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.7619047">
-          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/Cms/PageModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/AbstractModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <marker date="1439496644296" expanded="true" signature="129:143" placeholder="SELECT * FRO..." />
-            <marker date="1439496644296" expanded="true" signature="129:161" placeholder="SELECT * FRO..." />
-            <marker date="1439496644296" expanded="true" signature="129:179" placeholder="SELECT * FRO..." />
-            <marker date="1439496644296" expanded="true" signature="129:187" placeholder="SELECT * FRO..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -828,13 +913,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15044248">
           <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
+        <state vertical-scroll-proportion="0.0">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
           <folding />
         </state>
@@ -848,26 +932,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/Server/configurator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/Connection/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0">
-          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33296338">
+          <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
           <folding />
         </state>
       </provider>
