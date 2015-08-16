@@ -77,11 +77,11 @@ angular.module('CmsServices', ['ngCookies'], function ($provide) {
                 'headers': headers
             }).success(function (data, status, headers, config) {
 
-                $('#loadingSpinner').css('display', 'none');
 
             	if (data instanceof Object && data.error != undefined) {
                     console.log('Remote exception thrown:');
                     console.log(data.error.message);
+                    failure(data);
                     return;
             	}
             	if (cacheId != undefined && cacheId != null) {
@@ -92,7 +92,6 @@ angular.module('CmsServices', ['ngCookies'], function ($provide) {
                 }
             }).error(function (data, status, headers, config) {
 
-                $('#loadingSpinner').css('display', 'none');
 
                 if (failure != undefined && failure != null) {
                     failure(data);
@@ -127,9 +126,9 @@ angular.module('CmsServices', ['ngCookies'], function ($provide) {
             },
             getSessionId: function () {
                 if (sid == null) {
-                    sid = $cookies['PHPSESSID'];
+                    sid = $cookies.get('sid');
                 }
-             return sid;
+                return sid;
             },
             getUser: function() {
             	return user;
@@ -149,10 +148,24 @@ angular.module('CmsServices', ['ngCookies'], function ($provide) {
   		            		return;
   		            	}
   		                sid = res;
+                        $cookies.put("sid", sid);
   		                self.check(callback);
   		            },
                     failure
   	            );
+            },
+            check: function(callback){
+                $rpc(
+                    'check',
+                    [this.getSessionId()], function(res){
+                        user = res;
+
+                        userId = res.uid;
+                        $rootScope.user = res;
+                        $rootScope.isAuthenticated = true;
+                        if(undefined != callback) callback(res);
+                    }
+                );
             },
             logout: function (callback) {
             	this._destroySession();
@@ -189,7 +202,7 @@ angular.module('CmsServices', ['ngCookies'], function ($provide) {
 
         	var serviceName = method.split('.')[0];
 
-            $rpc('Otys.Services.' + method, [ $auth.getSessionId() ].concat(params), callback, failure, cacheId, cacheTtl, hideLoader);
+            $rpc(method, [ $auth.getSessionId() ].concat(params), callback, failure, cacheId, cacheTtl, hideLoader);
             return cacheId;
         };
     }]);

@@ -6,7 +6,7 @@ class SessionStorage {
     //put your code here
     
     protected function __construct(){
-        session_start();
+        if(!session_id()) session_start();
     }
         
     static function getInstance(){

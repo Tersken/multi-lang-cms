@@ -1,6 +1,7 @@
 <?php
 namespace Storex\Server;
-use Storex\Auth\Authentication;
+use Storex\Auth\Authentication,
+    Storex\Cms\PageModel;
 /**
  * Description of Configurator
  *
@@ -13,6 +14,8 @@ class Configurator {
         });
         
         $server->attach(new Authentication);
+        // Bind the method Api::doSomething() to the procedure myProcedure
+        $server->bind('listPages', 'Storex\Cms\PageModel', "listData");
         //$server->bind('myProcedure', 'Api', 'doSomething');
     }
 }

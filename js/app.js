@@ -2,14 +2,15 @@
 
 /* App Module */
 
-angular.module('MultiLangCms', ['ngRoute', 'CmsServices']).
+angular.module('MultiLangCms', ['ngRoute', 'CmsServices', 'ngLoadingSpinner']).
   config(['$routeProvider', function($routeProvider) {
 	  
 	 $routeProvider.
   	
          /*when('/login', { templateUrl: 'partials/login.html', controller: LoginCtrl }).
          when('/logout', { templateUrl: 'partials/login.html', controller: LoginCtrl }).*/
-         when('/', { templateUrl: 'partials/home.html', controller: BaseCtrl }).
+         //when('/', { templateUrl: 'partials/home.html', controller: BaseCtrl }).
+         when('/', { templateUrl: 'partials/cms/list.html', controller: CmsListCtrl }).
          when('/cms', { templateUrl: 'partials/cms/list.html', controller: CmsListCtrl }).
          when('/login', { templateUrl: 'login.html', controller: LoginCtrl }).
          when('/cms/new', { templateUrl: 'partials/cms/detail.html', controller: CmsDetailCtrl }).
@@ -26,8 +27,10 @@ angular.module('MultiLangCms').run(['$http', '$rootScope', '$auth', function($ht
 
        $rootScope.checkLogin = function(){
               var sid = $auth.getSessionId();
-              if(!sid && !$rootScope.isAuthenticated){
+              if(!sid){
                      window.location = '#/login';
+              }else {
+                  $auth.check();
               }
        }
 

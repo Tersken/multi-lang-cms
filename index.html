@@ -13,8 +13,13 @@
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular/angular-route.js"></script>
     <script src="lib/angular/angular-cookies.min.js"></script>
+    <script src="lib/angular/spin.min.js"></script>
+    <script src="lib/angular/angular-spinner.min.js"></script>
+    <script src="lib/angular/angular-loading-spinner.js"></script>
     <script src="js/services.js"></script>
     <script src="js/app.js"></script>
+
+
 
     <script src="js/controllers/baseController.js"></script>
     <script src="js/controllers/Login.js"></script>
@@ -25,7 +30,6 @@
 
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="lib/dataTables/css/jquery.dataTables.css">
-    <link href="lib/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
     <link href="css/simplecms.css" rel="stylesheet">
     <link href="css/template.css" rel="stylesheet">
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -34,6 +38,7 @@
 </head>
 
 <body>
+<span us-spinner="{radius:30, width:8, length: 16}"></span>
     <div ng-show="!isAuthenticated" id="login-wrapper" class="loginBackground" ng-view>
     </div>
     <div id="wrapper" ng-show="isAuthenticated">
@@ -44,8 +49,8 @@
                             <img height="60" src="img/loginLogo.png">
                         </a>
                         <div class="user-name">
-                            <h5>Wilfried</h5>
-                            <span>info@storex.nl</span>
+                            <h5>{{user.username}}</h5>
+                            <span>{{user.email}}</span>
                         </div>
                         <a class="storex-dropdown pull-right" href="javascript:;">
                             <i class="fa fa-chevron-down"></i>
@@ -53,11 +58,11 @@
                     </div>
                     <ul class="main-nav main-divider">
                         <li class="active">
-                            <a href="#"><i class="fa fa-globe"></i> CMS</a>
+                            <a href="#/cms"><i class="fa fa-globe"></i> CMS</a>
 
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-users"></i> Users</a>
+                            <a href="#/users"><i class="fa fa-users"></i> Users</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-files-o"></i> Files</a>
@@ -75,8 +80,18 @@
 
 
                 </aside>
-                <aside class="lg-side" ng-view>
-                    
+                <aside class="lg-side">
+                    <div class="main-head">
+                        <h3>{{pageTitle}}</h3>
+                        <form action="#" class="pull-right position">
+                            <div class="input-append">
+                                <input type="text" class="sr-input" placeholder="Search storex">
+                                <button class="btn sr-btn" type="button"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main-body" ng-view>
+                    </div>
                 </aside>
             </div>
 
@@ -87,10 +102,7 @@
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="lib/dataTables/js/jquery.js"></script>
-    <script src="lib/dataTables/js/jquery.dataTables.js"></script>
     <script src="lib/ckeditor/ckeditor.js"></script>
-    <script src="lib/metisMenu/dist/metisMenu.min.js"></script>
-    <script src="js/simplecms.js"></script>
 
 </body>
 

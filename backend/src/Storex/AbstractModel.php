@@ -7,26 +7,16 @@ abstract class AbstractModel{
     protected $db;
     
     public function __construct(){
-        $this->db = new Database();
+        $this->db = Database::getInstance();
     }
     
-    public function get($id){
-        $query = "SELECT * FROM {$this->tableName} WHERE uid = '$id' LIMIT 1";
-    }
+    abstract function get($id);
 
-    public function listData(){
+    abstract function listData($sid, $params);
 
-    }
+    abstract function delete($id);
 
-    public function delete(){
+    abstract function insert($data);
 
-    }
-
-    public function insert(){
-
-    }
-
-    public function update(){
-
-    }
+    abstract function update($id, $data);
 }
