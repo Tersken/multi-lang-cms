@@ -102,6 +102,21 @@ class ktdbi extends \mysqli {
 		return $r;
 	}
 
+    public function getRows($q, $ident = false) {
+        $s=$this->query($q);
+        $data = array();
+        while($r=$s->fetch_assoc()){
+            if($ident){
+                $data[$r[$ident]] = $r;
+            }else {
+                $data[] = $r;
+            }
+
+        }
+        $s->close();
+        return $data;
+    }
+
 	public function getSingle($q) {
 		$s=$this->query($q);
 		$r=$s->fetch_row();

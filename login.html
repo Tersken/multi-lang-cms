@@ -1,28 +1,52 @@
+<!DOCTYPE html>
+<html ng-app='MultiLangCmsLogin'>
 
-<div class="container">
-    <div class="row vertical-offset-100">
-        <div class="col-md-4 col-md-offset-4">
-            <div class="panel panel-default">
-                <div>
-                    <div class="row-fluid user-row">
-                        <img src="./img/loginLogo.png" class="img-responsive" alt="Conxole Admin"/>
-                    </div>
-                </div>
-                <div class="panel-body">
-                    <form accept-charset="UTF-8" role="form" class="form-signin">
-                        <fieldset>
-                            <label class="panel-login">
-                                <div class="login_result" ng-show="error">Login and/password are incorrect.</div>
-                            </label>
-                            <input class="form-control" placeholder="Username" ng-model="username" type="text">
-                            <input class="form-control" placeholder="Password" ng-model="password" type="password">
-                            <br />
-                            <input class="btn btn-lg btn-success btn-block" type="button" ng-click="login()" id="login" value="Login »">
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SimpleCMS Admin</title>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-route.js"></script>
+    <script src="lib/angular/angular-cookies.min.js"></script>
+    <script src="lib/angular/spin.min.js"></script>
+    <script src="lib/angular/angular-spinner.min.js"></script>
+    <script src="lib/angular/angular-loading-spinner.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/appLogin.js"></script>
+
+    <script src="js/controllers/baseController.js"></script>
+    <script src="js/controllers/Login.js"></script>
+    <script src="js/controllers/cms/CmsDetail.js"></script>
+    <script src="js/controllers/cms/CmsList.js"></script>
+    <script src="js/controllers/users/UserDetail.js"></script>
+    <script src="js/controllers/users/UserList.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/dataTables/css/jquery.dataTables.css">
+    <link href="css/simplecms.css" rel="stylesheet">
+    <link href="css/template.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+<span us-spinner="{radius:30, width:8, length: 16}"></span>
+<div id="login-wrapper" class="loginBackground" ng-view>
 </div>
 
+
+</div>
+<!-- /#wrapper -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/dataTables/js/jquery.js"></script>
+
+</body>
+
+</html>

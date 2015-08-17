@@ -4,6 +4,17 @@
     <div class="row">
         <form role="form" id="contact-form" class="contact-form">
             <div class="row">
+                <div class="controls controls-row">
+                    <select ng-model="page.language_code">
+                        <option value="en" selected>English</option>
+                        <option value="fr">Fran&ccedil;ais</option>
+                        <option value="de">Deutsch</option>
+                        <option value="it">Italiano</option>
+                        <option value="es">Espa&ntilde;ol</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
                         <input type="text" class="form-control" ng-model="page.title" name="title" placeholder="Title">
@@ -15,7 +26,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="[ form-group ]">
-                        <input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-default" autocomplete="off" />
+                        <input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-default" ng-model="page.published" autocomplete="off" />
                         <div class="[ btn-group ]">
                             <label for="fancy-checkbox-default" class="[ btn btn-default ]">
                                 <span class="[ glyphicon glyphicon-ok ]"></span>
@@ -33,7 +44,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <textarea class="form-control textarea" id="content"></textarea>
+                        <textarea class="form-control textarea" id="cmsDetailEditor"></textarea>
                     </div>
                 </div>
             </div>
@@ -42,7 +53,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <button type="submit" class="btn btn-labeled btn-success">
+            <button type="submit" class="btn btn-labeled btn-success" ng-click="save()">
                 <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Save
             </button>
             <button type="button" class="btn btn-labeled btn-danger" ng-show="!newMode">

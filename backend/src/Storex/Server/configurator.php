@@ -16,6 +16,9 @@ class Configurator {
         $server->attach(new Authentication);
         // Bind the method Api::doSomething() to the procedure myProcedure
         $server->bind('listPages', 'Storex\Cms\PageModel', "listData");
+        $server->bind('getPage', 'Storex\Cms\PageModel', "get");
+        $server->bind('updatePage', 'Storex\Cms\PageModel', "update");
+        $server->bind('insertPage', 'Storex\Cms\PageModel', "insert");
         //$server->bind('myProcedure', 'Api', 'doSomething');
     }
 }

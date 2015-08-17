@@ -12,9 +12,8 @@ angular.module('MultiLangCms', ['ngRoute', 'CmsServices', 'ngLoadingSpinner']).
          //when('/', { templateUrl: 'partials/home.html', controller: BaseCtrl }).
          when('/', { templateUrl: 'partials/cms/list.html', controller: CmsListCtrl }).
          when('/cms', { templateUrl: 'partials/cms/list.html', controller: CmsListCtrl }).
-         when('/login', { templateUrl: 'login.html', controller: LoginCtrl }).
          when('/cms/new', { templateUrl: 'partials/cms/detail.html', controller: CmsDetailCtrl }).
-         when('/cms/page/:id', { templateUrl: 'partials/cms/detail.html', controller: CmsDetailCtrl }).
+         when('/cms/id/:id', { templateUrl: 'partials/cms/detail.html', controller: CmsDetailCtrl }).
          when('/users', { templateUrl: 'partials/users/list.html', controller: UserListCtrl }).
          when('/users/new', { templateUrl: 'partials/users/detail.html', controller: UserDetailCtrl }).
          when('/users/page/:id', { templateUrl: 'partials/users/detail.html', controller: UserDetailCtrl }).
@@ -28,9 +27,10 @@ angular.module('MultiLangCms').run(['$http', '$rootScope', '$auth', function($ht
        $rootScope.checkLogin = function(){
               var sid = $auth.getSessionId();
               if(!sid){
-                     window.location = '#/login';
+                     window.location = '../login.html';
               }else {
-                  $auth.check();
+                     $auth.check();
+
               }
        }
 

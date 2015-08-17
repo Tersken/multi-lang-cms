@@ -4,11 +4,18 @@ function CmsListCtrl($scope, $rootScope, $ws) {
         $rootScope.checkLogin();
         $ws(
             "listPages",
-            [['test']]
+            [['test']],
+            function(result){
+                $scope.pages = result;
+            }
         );
         //listPages
 
     };
+
+    $scope.openDetail = function(id){
+        window.location = '#/cms/id/'+id;
+    }
 
     $scope.init();
 }

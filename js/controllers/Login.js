@@ -10,7 +10,7 @@ function LoginCtrl($scope, $location, $filter, $timeout, $http, $auth, $rootScop
 
     $scope.login = function(){
         $auth.login($scope.username, $scope.password, function(details){
-                window.location = '#/';
+                window.location = '/multi-lang-cms';
         },
         function(error){
                 $scope.error = true;

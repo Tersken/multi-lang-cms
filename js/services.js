@@ -126,7 +126,7 @@ angular.module('CmsServices', ['ngCookies'], function ($provide) {
             },
             getSessionId: function () {
                 if (sid == null) {
-                    sid = $cookies.get('sid');
+                    sid = $cookies.get('PHPSESSID');
                 }
                 return sid;
             },
@@ -148,13 +148,14 @@ angular.module('CmsServices', ['ngCookies'], function ($provide) {
   		            		return;
   		            	}
   		                sid = res;
-                        $cookies.put("sid", sid);
+                        $cookies.put("PHPSESSID", sid);
   		                self.check(callback);
   		            },
                     failure
   	            );
             },
             check: function(callback){
+                if(this.getUser()) return;
                 $rpc(
                     'check',
                     [this.getSessionId()], function(res){

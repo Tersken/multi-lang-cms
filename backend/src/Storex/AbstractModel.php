@@ -10,13 +10,13 @@ abstract class AbstractModel{
         $this->db = Database::getInstance();
     }
     
-    abstract function get($id);
+    abstract function get($sid, $id);
 
     abstract function listData($sid, $params);
 
-    abstract function delete($id);
+    abstract function delete($sid, $id);
 
-    abstract function insert($data);
+    abstract function insert($sid, $data);
 
-    abstract function update($id, $data);
+    abstract function update($sid, $data);
 }
