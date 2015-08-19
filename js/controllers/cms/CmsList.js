@@ -6,7 +6,8 @@ function CmsListCtrl($scope, $rootScope, $ws) {
             "listPages",
             [['test']],
             function(result){
-                $scope.pages = result;
+                $scope.pages = result.data;
+                $scope.count = result.count;
             }
         );
         //listPages

@@ -1,6 +1,7 @@
 <?php
 namespace Storex\Cms;
-use Storex\AbstractModel;
+use Storex\AbstractModel,
+    Storex\Auth\SessionStorage;
 
 class PageModel extends AbstractModel{
 
@@ -12,9 +13,14 @@ class PageModel extends AbstractModel{
     }
 
     public function listData($sid, $params){
-        $query = "SELECT * FROM storex.pages";
+        $query = "SELECT p.*, u.username FROM storex.pages AS p
+                LEFT JOIN storex.users AS u ON (p.userid = u.uid)";
         $data = $this->db->getRows($query);
-        return $data;
+        
+        $queryCount = "SELECT COUNT(*) FROM storex.pages AS p";
+        $count = $this->db->getSingle($queryCount);
+        
+        return array("data" => $data, "count" => $count);
 
     }
 
@@ -23,6 +29,8 @@ class PageModel extends AbstractModel{
     }
 
     public function insert($sid, $data){
+        $ss = SessionStorage::getInstance();
+        $data['userid'] = $ss->get("user")['uid'];
         $iTokens = $this->db->getInsertTokens($data);
         $query = "INSERT INTO storex.pages ($iTokens[0], time_added) VALUES ($iTokens[1], NOW())";
         $this->db->query($query);

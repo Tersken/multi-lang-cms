@@ -1,0 +1,10 @@
+
+<ul ui-sortable="sortableOptions" ng-model="items" class="list">
+    <li ng-repeat="item in items" class="item"><i class="fa fa-arrows-h"></i>{{ item }}<button>+</button>
+        <ul ui-sortable="sortableOptionsSub" ng-model="subitems" class="subitemlist">
+            <li ng-repeat="subitem in subitems" class="subitem"><i class="fa fa-arrows-v"></i>{{ subitem }} </li>
+        </ul>
+    </li>
+</ul>
+
+

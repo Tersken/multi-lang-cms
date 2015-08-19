@@ -2,7 +2,7 @@
 
 /* App Module */
 
-angular.module('MultiLangCms', ['ngRoute', 'CmsServices', 'ngLoadingSpinner']).
+angular.module('MultiLangCms', ['ngRoute', 'CmsServices', 'ngLoadingSpinner', 'ckeditor', 'ui.sortable']).
   config(['$routeProvider', function($routeProvider) {
 	  
 	 $routeProvider.
@@ -14,6 +14,7 @@ angular.module('MultiLangCms', ['ngRoute', 'CmsServices', 'ngLoadingSpinner']).
          when('/cms', { templateUrl: 'partials/cms/list.html', controller: CmsListCtrl }).
          when('/cms/new', { templateUrl: 'partials/cms/detail.html', controller: CmsDetailCtrl }).
          when('/cms/id/:id', { templateUrl: 'partials/cms/detail.html', controller: CmsDetailCtrl }).
+         when('/cms/menu', { templateUrl: 'partials/cms/menu.html', controller: CmsMenuCtrl }).
          when('/users', { templateUrl: 'partials/users/list.html', controller: UserListCtrl }).
          when('/users/new', { templateUrl: 'partials/users/detail.html', controller: UserDetailCtrl }).
          when('/users/page/:id', { templateUrl: 'partials/users/detail.html', controller: UserDetailCtrl }).

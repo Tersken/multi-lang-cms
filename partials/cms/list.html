@@ -5,7 +5,7 @@
                 <h3 class="panel-title">
                     Cms Pages</h3>
                 <span class="label label-info">
-                    78</span>
+                    {{count}}</span>
             </div>
             <div class="panel-body">
                 <ul class="list-group">
@@ -18,22 +18,11 @@
                                     <a href="http://www.jquery2dotnet.com/2013/10/google-style-login-page-desing-usign.html">
                                         {{page.title}}</a>
                                     <div class="mic-info">
-                                        By: <a href="#">Bhaumik Patel</a> on 2 Aug 2013
+                                        By: <b>{{page.username}}</b> on {{page.time_added}}
                                     </div>
                                 </div>
                                 <div class="comment-text">
 
-                                </div>
-                                <div class="action">
-                                    <button type="button" class="btn btn-primary btn-xs" title="Edit">
-                                        <span class="glyphicon glyphicon-pencil"></span>
-                                    </button>
-                                    <button type="button" class="btn btn-success btn-xs" title="Approved">
-                                        <span class="glyphicon glyphicon-ok"></span>
-                                    </button>
-                                    <button type="button" class="btn btn-danger btn-xs" title="Delete">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                    </button>
                                 </div>
                             </div>
                         </div>
