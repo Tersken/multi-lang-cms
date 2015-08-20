@@ -2,7 +2,7 @@
 
 /* App Module */
 
-angular.module('MultiLangCms', ['ngRoute', 'CmsServices', 'ngLoadingSpinner', 'ckeditor', 'ui.sortable']).
+angular.module('MultiLangCms', ['ngRoute', 'CmsServices', 'ngLoadingSpinner', 'ckeditor', 'ui.sortable', 'ui.bootstrap']).
   config(['$routeProvider', function($routeProvider) {
 	  
 	 $routeProvider.

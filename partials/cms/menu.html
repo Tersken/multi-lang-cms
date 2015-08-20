@@ -1,10 +1,12 @@
-
+<button ng-click="ItemAddModal(0, 0);">+</button>
 <ul ui-sortable="sortableOptions" ng-model="items" class="list">
-    <li ng-repeat="item in items" class="item"><i class="fa fa-arrows-h"></i>{{ item }}<button>+</button>
-        <ul ui-sortable="sortableOptionsSub" ng-model="subitems" class="subitemlist">
-            <li ng-repeat="subitem in subitems" class="subitem"><i class="fa fa-arrows-v"></i>{{ subitem }} </li>
+    <li ng-repeat="(key, item) in items" class="item">{{ item.title }}<button ng-click="ItemAddModal(key, 1);">+</button><button ng-click="removeItem(key)">x</button>
+        <ul ui-sortable="sortableOptionsSub" ng-model="items[key].subitems" class="subitemlist">
+            <li ng-repeat="(subkey, subitem) in item.subitems" class="subitem"></i>{{ subitem.title }} <button ng-click="removeSubItem(key, subkey)">x</button></li>
         </ul>
     </li>
 </ul>
+
+<button class="btn btn-primary" ng-click="saveMenu()">Save</button>
 
 

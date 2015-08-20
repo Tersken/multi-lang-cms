@@ -19,6 +19,8 @@ class Configurator {
         $server->bind('getPage', 'Storex\Cms\PageModel', "get");
         $server->bind('updatePage', 'Storex\Cms\PageModel', "update");
         $server->bind('insertPage', 'Storex\Cms\PageModel', "insert");
+        $server->bind('getMenu', 'Storex\Cms\MenuModel', "getMenu");
+        $server->bind('saveMenu', 'Storex\Cms\MenuModel', "saveMenu");
         //$server->bind('myProcedure', 'Api', 'doSomething');
     }
 }
