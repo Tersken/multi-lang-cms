@@ -17,7 +17,7 @@ angular.module('MultiLangCms', ['ngRoute', 'CmsServices', 'ngLoadingSpinner', 'c
          when('/cms/menu', { templateUrl: 'partials/cms/menu.html', controller: CmsMenuCtrl }).
          when('/users', { templateUrl: 'partials/users/list.html', controller: UserListCtrl }).
          when('/users/new', { templateUrl: 'partials/users/detail.html', controller: UserDetailCtrl }).
-         when('/users/page/:id', { templateUrl: 'partials/users/detail.html', controller: UserDetailCtrl }).
+         when('/users/id/:id', { templateUrl: 'partials/users/detail.html', controller: UserDetailCtrl }).
 
       otherwise({redirectTo: '/'});
       
@@ -28,7 +28,7 @@ angular.module('MultiLangCms').run(['$http', '$rootScope', '$auth', function($ht
        $rootScope.checkLogin = function(){
               var sid = $auth.getSessionId();
               if(!sid){
-                     window.location = '../login.html';
+                     window.location = 'login.html';
               }else {
                      $auth.check();
 

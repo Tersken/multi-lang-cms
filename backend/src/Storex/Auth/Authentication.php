@@ -30,7 +30,7 @@ class Authentication {
     }
     
     public function logout($sid){
-        
+        return SessionStorage::destroy();
     }
     
 }

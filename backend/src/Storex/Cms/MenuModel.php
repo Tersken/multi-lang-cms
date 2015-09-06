@@ -5,14 +5,14 @@ use Storex\AbstractModel,
 
 class MenuModel extends AbstractModel{
 
-    public function get($sid, $id){
+    public function get($id){
         $id = $this->db->esc($id);
         $query = "SELECT * FROM storex.pages WHERE pageUid = $id";
         $data = $this->db->getRow($query);
         return $data;
     }
 
-    public function listData($sid, $params){
+    public function listData($params){
         $query = "SELECT* FROM storex.menu";
         $data = $this->db->getRows($query);
         
@@ -23,7 +23,7 @@ class MenuModel extends AbstractModel{
 
     }
     
-    public function getMenu($sid, $id){
+    public function getMenu($id){
         $query = "SELECT mu.*, page.title FROM storex.menu_items AS mu 
                     LEFT JOIN storex.pages AS page ON (page.pageUid = mu.target AND mu.is_module = 0)  
                     WHERE menu_uid = {$id}";
@@ -45,9 +45,9 @@ class MenuModel extends AbstractModel{
         return ($a['rank'] < $b['rank']) ? -1 : 1;
     } 
     
-    public function saveMenu($sid, $menuUid, $items){
+    public function saveMenu($menuUid, $items){
         $rank = 0;
-        $this->deleteMenuItems($sid, $menuUid);
+        $this->deleteMenuItems($menuUid);
         foreach($items as $item){
             $tokens = array(
                 "target" => array_key_exists('pageUid', $item) ? $item['pageUid'] : $item['target'],
@@ -56,7 +56,7 @@ class MenuModel extends AbstractModel{
                 "parent_uid" => 0,
                 "rank" => $rank
             );
-            $itemId = $this->insert($sid, $tokens);
+            $itemId = $this->insert($tokens);
             $rank++;
             $subRank = 0;
             if(!array_key_exists("subitems", $item)){
@@ -70,14 +70,14 @@ class MenuModel extends AbstractModel{
                     "parent_uid" => $itemId,
                     "rank" => $subRank
                 );
-                $this->insert($sid, $subtokens);
+                $this->insert($subtokens);
                 $subRank++;
             }
         }
         return $items;
     }
 
-    public function deleteMenu($sid, $menuUid){
+    public function deleteMenu($menuUid){
         $query = "DELETE FROM storex.menu_items WHERE menu_uid = {$menuUid}";
         $this->db->query($query);
         
@@ -85,16 +85,16 @@ class MenuModel extends AbstractModel{
         $this->db->query($query);
     }
     
-    public function deleteMenuItems($sid, $menuUid){
+    public function deleteMenuItems($menuUid){
         $query = "DELETE FROM storex.menu_items WHERE menu_uid = {$menuUid}";
         $this->db->query($query);
     }
 
-    public function delete($sid, $id){
+    public function delete($id){
 
     }
 
-    public function insert($sid, $data){
+    public function insert($data){
         $iTokens = $this->db->getInsertTokens($data);
         $query = "INSERT INTO storex.menu_items ($iTokens[0]) VALUES ($iTokens[1])";
         $this->db->query($query);
@@ -103,7 +103,7 @@ class MenuModel extends AbstractModel{
         return $id;
     }
 
-    public function update($sid, $data){
+    public function update($data){
         $iTokens = $this->db->getInsertTokens($data);
         $query = "REPLACE INTO storex.pages ($iTokens[0]) VALUES ($iTokens[1])";
         $this->db->query($query);

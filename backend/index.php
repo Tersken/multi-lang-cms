@@ -5,7 +5,7 @@ require_once("vendor/autoload.php");
 require_once("autoloader.php");
 require_once("config.php");
 
-use JsonRPC\Server;
+use Storex\Server\Server;
 
 $server = new Server;
 //Sets all available methods
