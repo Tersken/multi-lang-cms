@@ -24,7 +24,9 @@ class UserModel extends AbstractModel{
     }
 
     public function delete($id){
-
+        $id = $this->db->esc($id);
+        $query = "DELETE from storex.users WHERE uid = '$id'";
+        $this->db->query($query);
     }
 
     public function insert($data){

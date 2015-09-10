@@ -10,11 +10,13 @@
     <meta name="author" content="">
 
     <title>SimpleCMS Admin</title>
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-ui.min.js"></script>
-    <script src="lib/angular/angular.js"></script>
-    <script src="lib/angular/angular-route.js"></script>
-    <script src="lib/angular/angular-cookies.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+    <script src="bower_components/angular-file-upload/dist/angular-file-upload.min.js"></script>
+    <script src="bower_components/angular-xeditable/dist/js/xeditable.min.js"></script>
     <script src="lib/angular/spin.min.js"></script>
     <script src="lib/angular/angular-spinner.min.js"></script>
     <script src="lib/angular/angular-loading-spinner.js"></script>
@@ -22,6 +24,7 @@
     <script src="lib/angular/ui-bootstrap.min.js"></script>
     <script src="js/services.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/directives.js"></script>
 
 
 
@@ -32,13 +35,16 @@
     <script src="js/controllers/cms/CmsMenu.js"></script>
     <script src="js/controllers/users/UserDetail.js"></script>
     <script src="js/controllers/users/UserList.js"></script>
+    <script src="js/controllers/files/FileDetail.js"></script>
+    <script src="js/controllers/files/FileList.js"></script>
 
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="lib/dataTables/css/jquery.dataTables.css">
     <link href="css/simplecms.css" rel="stylesheet">
     <link href="css/template.css" rel="stylesheet">
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" type="text/css" href="lib/flags/flags32.css" />
+    <link rel="stylesheet" type="text/css" href="lib/flags/flags32.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-xeditable/dist/css/xeditable.css" />
 
 </head>
 
@@ -60,7 +66,7 @@
                         </a>
                     </div>
                     <ul class="main-nav main-divider">
-                        <li class="active">
+                        <li>
                             <a href="#/cms"><i class="fa fa-globe"></i> CMS</a>
 
                         </li>
@@ -68,7 +74,7 @@
                             <a href="#/users"><i class="fa fa-users"></i> Users</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-files-o"></i> Files</a>
+                            <a href="#/files"><i class="fa fa-files-o"></i> Files</a>
                         </li>
                     </ul>
                     <ul class="nav nav-pills nav-stacked labels-info main-divider">
@@ -88,10 +94,17 @@
                         <h3>{{pageTitle}}</h3>
 
                         <form action="#" class="pull-right position">
-
                             <div class="input-append">
-                                <input type="text" class="sr-input" placeholder="Search storex">
-                                <button class="btn sr-btn" type="button"><i class="fa fa-search"></i></button>
+                                <select ng-model="language_code" class="sr-input" ng-change="setLanguageCode()">
+                                    <option value="en" selected>English</option>
+                                    <option value="nl" selected>Nederlands</option>
+                                    <option value="fr">Fran&ccedil;ais</option>
+                                    <option value="de">Deutsch</option>
+                                    <option value="it">Italiano</option>
+                                    <option value="es">Espa&ntilde;ol</option>
+                                    <option value="cz">Czech</option>
+                                </select>
+                                <button class="btn sr-btn" type="button"><span class="f32"><span class="flag {{language_code}}"></span></span></button>
                             </div>
                         </form>
                     </div>

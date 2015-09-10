@@ -8,6 +8,10 @@ html {
         
 }
 
+
+.my-drop-zone { border: dotted 3px lightgray; height: 180px; }
+.nv-file-over { border: dotted 3px green; }
+
 .item {
 	//width: 100px;
 	padding: 5px 10px;

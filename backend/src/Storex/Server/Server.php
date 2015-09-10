@@ -17,7 +17,7 @@ class Server extends \JsonRPC\Server
     public function executeMethod($class, $method, $params)
     {
         //Do Session checking
-        if("login" != $method){
+        if(!in_array($method, ["login", "check"])){
             $auth = new Authentication();
             $sid = array_shift($params);
             $user = $auth->check($sid);

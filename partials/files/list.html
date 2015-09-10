@@ -1,0 +1,44 @@
+<div>
+    <table class="table table-striped table-hover table-condensed">
+        <tr style="font-weight: bold">
+            <td style="width:45%">Name</td>
+            <td style="width:15%">Access Level</td>
+            <td style="width:15%">Added by</td>
+            <td style="width:25%">Edit</td>
+        </tr>
+        <tr ng-repeat="file in files">
+            <td>
+                <span editable-text="file.name" e-name="name" e-form="rowform" e-required>
+                  {{ file.name || 'empty' }}
+                </span>
+            </td>
+            <td>
+                <span editable-text="file.access_level" e-name="access_level" e-form="rowform" e-required>
+                  {{ file.access_level || 'empty' }}
+                </span>
+            </td>
+            <td>
+               {{file.username}}
+            </td>
+
+            <td style="white-space: nowrap">
+                <!-- form -->
+                <form editable-form name="rowform" onbeforesave="saveFile($data, file.uid)" ng-show="rowform.$visible" class="form-buttons form-inline" shown="inserted == file">
+                    <button type="submit" ng-disabled="rowform.$waiting" class="btn btn-primary">
+                        save
+                    </button>
+                    <button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel()" class="btn btn-warning">
+                        cancel
+                    </button>
+                </form>
+                <div class="buttons" ng-show="!rowform.$visible">
+                    <button class="btn btn-success" ng-click="download(file.uid)">Download</button>
+                    <button class="btn btn-primary" ng-click="rowform.$show()">Edit</button>
+                    <button class="btn btn-danger" ng-really-message="Are you sure you want to remove {{file.name}}?"
+                            ng-really-click="removeFile(file.uid)">Delete</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</div>

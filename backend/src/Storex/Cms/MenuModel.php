@@ -24,6 +24,7 @@ class MenuModel extends AbstractModel{
     }
     
     public function getMenu($id){
+        $id = $this->db->esc($id);
         $query = "SELECT mu.*, page.title FROM storex.menu_items AS mu 
                     LEFT JOIN storex.pages AS page ON (page.pageUid = mu.target AND mu.is_module = 0)  
                     WHERE menu_uid = {$id}";
@@ -78,6 +79,7 @@ class MenuModel extends AbstractModel{
     }
 
     public function deleteMenu($menuUid){
+        $menuUid = $this->db->esc($menuUid);
         $query = "DELETE FROM storex.menu_items WHERE menu_uid = {$menuUid}";
         $this->db->query($query);
         
@@ -86,6 +88,7 @@ class MenuModel extends AbstractModel{
     }
     
     public function deleteMenuItems($menuUid){
+        $menuUid = $this->db->esc($menuUid);
         $query = "DELETE FROM storex.menu_items WHERE menu_uid = {$menuUid}";
         $this->db->query($query);
     }

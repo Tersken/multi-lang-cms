@@ -1,0 +1,33 @@
+{
+  "name": "bower",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Tersken/multi-lang-cms",
+  "authors": [
+    "Tersken <koen.tersago@gmail.com>"
+  ],
+  "description": "Install js dependencies",
+  "main": "bower",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "all"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-cookies": "~1.4.5",
+    "angular-file-upload": "~2.1.4",
+    "angular-route": "~1.4.5",
+    "angular-spinner": "~0.7.0",
+    "angular-xeditable": "~0.1.9",
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.11.4"
+  }
+}

@@ -2,6 +2,7 @@ function CmsDetailCtrl($scope, $routeParams, $rootScope, $ws) {
   
     $scope.init = function() {
         $rootScope.checkLogin();
+        $rootScope.pageTitle = "CMS > Detail";
         if($routeParams.id){
             $scope.loadPage($routeParams.id);
         }
@@ -12,7 +13,6 @@ function CmsDetailCtrl($scope, $routeParams, $rootScope, $ws) {
         $ws("getPage",
             [id],
             function(result){
-                console.log('result', result);
                 result.published = result.published == 1 ? true: false;
                 $scope.page = result;
             }
@@ -20,19 +20,21 @@ function CmsDetailCtrl($scope, $routeParams, $rootScope, $ws) {
     }
 
     $scope.save = function(){
+        var data = $scope.page;
+        data.language_code = $rootScope.language_code;
         if($scope.page.pageUid){
             $ws("updatePage",
-                [$scope.page],
+                [data],
                 function(result){
-                    window.location = "/index.html#/cms";
+                    window.location = "#/cms";
                     $scope.loadPage(result);
                 }
             );
         }else {
             $ws("insertPage",
-                [$scope.page],
+                [data],
                 function(result){
-                    window.location = "/index.html#/cms";
+                    window.location = "#/cms";
                     $scope.loadPage(result);
                 }
             );
