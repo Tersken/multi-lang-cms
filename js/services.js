@@ -79,8 +79,10 @@ angular.module('CmsServices', ['ngCookies'], function ($provide) {
 
 
             	if (data instanceof Object && data.error != undefined) {
+
                     console.log('Remote exception thrown:');
                     console.log(data.error.message);
+                    alert(data.error.message);
                     failure(data);
                     return;
             	}

@@ -10,7 +10,7 @@ class Authentication {
         $db = Database::getInstance();
         $username = $db->escape_string($username);
         $password = $db->escape_string($password);
-        $query = "SELECT uid, username, email, acces_level FROM storex.users WHERE username = '{$username}' AND password = MD5('{$password}')";
+        $query = "SELECT uid, username, email, access_level FROM storex.users WHERE username = '{$username}' AND password = MD5('{$password}')";
         $result = $db->getRow($query);
         if($result){
             $ss = SessionStorage::getInstance();

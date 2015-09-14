@@ -2,6 +2,7 @@
 namespace Storex\Register;
 use Storex\AbstractModel,
     Storex\Auth\SessionStorage;
+use Storex\Auth\AccessDeniedException;
 
 class UserModel extends AbstractModel{
 
@@ -30,7 +31,7 @@ class UserModel extends AbstractModel{
     }
 
     public function insert($data){
-        $ss = SessionStorage::getInstance();
+        $this->_accessLevelCheck($data['access_level']);
         $iTokens = $this->db->getInsertTokens($data);
         $query = "INSERT INTO storex.users ($iTokens[0], time_added) VALUES ($iTokens[1], NOW())";
         $this->db->query($query);
@@ -40,11 +41,19 @@ class UserModel extends AbstractModel{
     }
 
     public function update($data){
+        $this->_accessLevelCheck($data['access_level']);
         $iTokens = $this->db->getInsertTokens($data);
         $query = "REPLACE INTO storex.users ($iTokens[0]) VALUES ($iTokens[1])";
         $this->db->query($query);
         return $data['uid'];
 
+    }
+
+    protected function _accessLevelCheck($accessLevel){
+        $ss = SessionStorage::getInstance();
+        if (@$ss->get("user")['access_level'] < $accessLevel){
+            throw new AccessDeniedException("You cannot create/update users with a access level higher than yourself.");
+        }
     }
 
 }
