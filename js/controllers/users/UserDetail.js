@@ -3,9 +3,22 @@ function UserDetailCtrl($scope, $routeParams, $rootScope, $ws) {
         $rootScope.pageTitle = "Users > Detail";
         $rootScope.checkLogin();
         $scope.id = $routeParams.id;
+        if($scope.id){
+            $scope.loadUser($scope.id);
+        }
         $scope.edituser = $scope.edituser | {};
         // config.extraPlugins = 'maximize';
     };
+
+    $scope.loadUser = function(id){
+        $ws("getUser",
+            [id],
+            function(result){
+                $scope.edituser = result;
+                //window.location = "#/users";
+            }
+        );
+    }
 
     $scope.updateUser = function(){
         var user = $scope.edituser;

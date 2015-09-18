@@ -10,6 +10,7 @@ class UserModel extends AbstractModel{
         $id = $this->db->esc($id);
         $query = "SELECT * FROM storex.users WHERE uid = $id";
         $data = $this->db->getRow($query);
+        unset($data['password']);
         return $data;
     }
 
@@ -19,7 +20,11 @@ class UserModel extends AbstractModel{
 
         $queryCount = "SELECT COUNT(*) FROM storex.users AS p";
         $count = $this->db->getSingle($queryCount);
-
+        if($data){
+            foreach($data as &$item){
+                unset($item['password']);
+            }
+        }
         return array("data" => $data, "count" => $count);
 
     }
@@ -42,8 +47,9 @@ class UserModel extends AbstractModel{
 
     public function update($data){
         $this->_accessLevelCheck($data['access_level']);
-        $iTokens = $this->db->getInsertTokens($data);
-        $query = "REPLACE INTO storex.users ($iTokens[0]) VALUES ($iTokens[1])";
+        if(!$data['uid']) return $this->insert($data);
+        $uTokens = $this->db->getUpdateTokens($data);
+        $query = "UPDATE storex.users SET $uTokens WHERE uid = {$data['uid']}";
         $this->db->query($query);
         return $data['uid'];
 
